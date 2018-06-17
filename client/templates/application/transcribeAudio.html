@@ -1,0 +1,29 @@
+<template name="transcribeAudio">
+	<div class="center cyan-text task-title">
+  		<h3><b>A 'Man From Hope' Is Elected to the White House in 1992(2/5)</b></h3>
+	</div>
+  <div class="audiobox">
+  	<div class="heading-bar bg_cyan">
+  		Audio playback
+  	</div>
+  	<div class="a_content">
+  		<audio controls controlslist="nodownload">
+  			<source src="./output/audio1.mp3" type="audio/mp3">
+  			Your browser does not support the audio element.
+  		</audio>
+  	</div>
+  </div>
+
+  <div class="transcriptionbox">
+  	<div class="heading-bar bg_cyan">
+  		transcroption box transcribe audio
+  	</div>
+  	<div class="t_content">
+  		This job requires a final transaction in text format. Please type in what you hear below.<br>
+  		<textarea type="text" id="transaction-content" name="transaction-content"> </textarea>
+  		<button class="confirm-button"><i class="fa fa-paper-plane" aria-hidden="true"></i>Send</button>
+  	</div>
+  	
+  </div>
+
+</template>

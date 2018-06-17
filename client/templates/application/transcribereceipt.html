@@ -1,0 +1,42 @@
+<template name="transcribereceipt">
+  <div class="center cyan-text task-title">
+        <h3><b>Collect data from receipt (2/5)</b></h3>
+    </div>
+  <div class="imagebox">
+  	<div class="heading-bar bg_cyan">
+  		Receipt
+  	</div>
+  	<div class="i_content">
+  		<img src="./output/receipt.jpg" class="task-image">
+  	</div>
+  </div>
+
+  <div class="transcriptionbox">
+  	<div class="heading-bar bg_cyan">
+  		Gather the information from the receipt
+  	</div>
+  	<div class="t_content">
+      <div class="receiptbox">
+        <b>Store Name</b><br>
+        <input name="storename" id="storename" class="" type="text"/>
+      </div>
+      <div class="receiptbox">
+        <b>Street Address(e.g. 1234 Main st.) </b><br>
+        <input name="address" id="address" class="" type="text"/>
+      </div>
+      <div class="receiptbox">
+        <b>Total Amount (e.g. $321.00)</b><br>
+        <input name="total" id="total" class="" type="text"/>
+      </div>
+  		<div class="datebox">
+          <b>Date(MM/DD/YYYY)</b>
+          <div class="input-group datepicker">
+             <input name="idInput" id="idInput" class="set-due-date form-control" type="text"/>
+          </div>
+      </div>
+  		<button class="confirm-button"><i class="fa fa-paper-plane" aria-hidden="true"></i>Send</button>
+  	</div>
+  	
+  </div>
+
+</template>
