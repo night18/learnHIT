@@ -34,7 +34,7 @@ Template.initialTest.events({
 
 		Session.set('initial_time', staytime);
 		Session.set('initial_answer', $('#transaction-content').val());
-		Router.go('/collectfromweb'); 
+		Router.go('/transcribereceipt'); 
 	}
 });
 
@@ -175,10 +175,6 @@ Template.imageLabeling.events({
 Template.findCD.onCreated(function (){
 	this.startTimer = new Date();
 	console.log(this.startTimer.toString());
-});
-
-Template.transcribereceipt.onRendered(function (){
-	$('.datepicker').datepicker();
 });
 
 
